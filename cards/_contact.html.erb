@@ -1,0 +1,65 @@
+<div class='card'>
+	<div class='card-toolbar'>
+		<span class='card-title'>
+			[Pref.] First Last
+		</span>
+		<span class='card-actions'>
+			<a href="#" class='edit edit-toggle'>edit</a>
+			<a href="#" class='save edit-toggle'>save</a>
+			<a href="#" class='remove'>&times; remove</a>
+		</span>
+	</div>
+
+	<div class='card-content read-content edit-toggle'>
+			<p><label>Relationship: </label> Uncle</p>
+			<p><label>Home Phone: </label> (234) 123-3490</p>
+			<p><label>Work Phone: </label> (234) 123-3545</p>
+			<p><label>Mobile Phone: </label> (567) 234-2393</p>
+			<p><label>Is emergency contact?</label> Yes </p>
+		
+	</div>
+
+	<div class='card-content edit-content edit-toggle'>
+		<form class="contact-54546">
+			<input type="hidden" name="person_pk" value="54546"></input>
+			<table>
+			<tr>
+				<tr>
+				<td class="label">Relationship: </td> 
+				<td>
+					<select class="input" name="relationship">
+						<option value="14" selected="selected">Uncle</option>
+						<option value="15">Aunt</option>
+						<option value="16">Magician</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label">Home Phone: </td> 
+				<td><input class="input" type="text" name="home_phone" valye="(234) 123-3490"></input></td>
+			</tr>
+			<tr>
+				<td class="label">Work Phone: </td>
+				<td><input class="input" type="text" name="home_phone" value="(234) 123-3545"></input></td>
+			</tr>
+			<tr>
+				<td class="label">Mobile Phone: </td> 
+				<td><input class="input" type="text" name="home_phone" value="(567) 234-2393"></input></td>
+			</tr>
+			<tr>
+				<td class="label">Is emergency contact?</label></td>
+				<td>
+					<select class="input" name="is_emergency_contact">
+						<option value="1" selected="selected">
+							Yes 
+						</option>	
+						<option>
+							No
+						</option>
+					</select>
+				</td>
+			</tr>
+			</table>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,204 @@
+<!doctype html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>Parent Portal - Veracross</title>
+
+	<link href="/style/style.css" media="all" rel="stylesheet" type="text/css"></link>
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="/script/app.js" type="text/javascript"></script>
+	
+</head>
+<body class="" ontouchstart="">
+
+
+<div id="household" class="container">
+
+<div id="household-profile" class="content">
+
+
+		<h2>Update My Household Profile</h2>
+
+		<div class='instructions'>
+			<h4>Instructions</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class='content-tabs'>
+			<a href="#" class='active'>Actions</a>
+			<a href="#">Recent Updates</a>
+		</div>
+
+		<div id="profile-actions" class="centered-box">
+
+			<div class="search"><input type="text" id="profile-search" placeholder="search actions" /></div>
+
+			<h4>Household Contacts</h4>
+			
+			<div class='card-category'>
+				<a href="#" id="demo-details">
+					Add &amp; Remove Contacts for My Children
+					<span class="preview">Relatives, Emergency Contacts &amp; Other Contacts</span>
+				</a>
+			
+				
+				<div id='emergency-contact-details' class="cards clear">
+					<div class='cards-tab-selected'>&nbsp;</div>
+					
+					<%= render '/cards/contact' %>
+				
+				</div>
+			</div>
+			<div class='card-category placeholder'><a href="#"><span class="preview"></span></a></div>
+
+			<div class='card-category'><a href="#">Pickup Authorization<span class="preview">&nbsp;</span></a></div>
+			<div class='card-category'><a href="#">General Communication Recipients<span class="preview">&nbsp;</span></a></div>
+
+			<div class='card-category'><a href="#">Report Card Recipients<span class="preview">&nbsp;</span></a></div>
+			<div class='card-category'><a href="#">Change Primary Billing Contact<span class="preview">me</span></a></div>
+
+			<h4>Medical Information</h4>
+			
+			<div class='card-category'><a href="#">Review Medical Profile<span class="preview">View current profile and submit change requests</span></a></div>
+			<div class='card-category'><a href="#">Review Primary Doctor<span class="preview">None specified</span></a></div>
+
+			<div class='card-category'><a href="#">Medical Notification Recipients<span class="preview">&nbsp;</span></a></div>
+			
+
+			<h4>School Permissions</h4>
+			<div class='card-category'><a href="#">Review School Permissions</a><span class='preview'>&nbsp;</span></div>
+			<div class='card-category'><a href="#">Review Vehicles<span class="preview">2 vehicles on file</span></a></div>
+			<div class='card-category'><a href="#">Lunch Preferences</a><span class='preview'>&nbsp;</span></div>
+			
+
+			<h4>Family Information</h4>
+			<div class='card-category'><a href="#">My Personal Contact Information<span class="preview">Names, Phones, &amp; Emails</span></a></div>
+			<div class='card-category'><a href="#">My Children Information<span class="preview">Names, Phones, &amp; Emails</span></a></div>
+			<div class='card-category'><a href="#">Change Primary Address<span class="preview">1234 Main Street Charleston, SC 38290</span></a></div>
+			<div class='card-category'><a href="#">Add a Secondary Address<span class="preview">example: summer home</span></a></div>
+			<div class='card-category'><a href="#">Review Family Directory Preferences</a><span class="preview">Display address and phone</span></div>
+			<div class='card-category'><a href="#">Change Primary Communcation Method<span class="preview">Both Paper Mail &amp; Email</span></a></div>
+			<div class='card-category'><a href="#">Update My Employer<span class="preview">Sales Manager at Breuer &amp; Co.</span></a></div>
+			<div class='card-category'><a href="#">Review International Information &amp; Travel<span class="preview">Languages, Citizenship &amp; Visas</span></a></div>
+			
+			
+		</div>
+
+
+		<div id="profile-cards" class="clear">
+			<div class='card'>
+				<div class='card-toolbar'>
+					<span class='card-title'>
+						child #1
+					</span>
+					<span class='card-actions'>
+						<a href="#">edit</a>
+					</span>
+				</div>
+				<div class='card-content'>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+		</div>
+	
+
+	</div>
+</div>
+
+<style>
+	body {font-family: 'Segoe UI','Helvetica',Arial;}
+	.content .content-tabs {
+	    border-bottom: 1px solid #DDDDDD;
+	    margin: 10px 0;
+	}
+	.no-float: { float: none; }
+	a {
+    	color: #000000;
+    	outline: 0 none;
+	}
+
+	.content .content-tabs a {
+	    display: inline-block;
+	    font-size: 14px;
+	    padding: 10px 20px;
+	    text-decoration: none;
+	}
+	.content .content-tabs .active {
+	    background: none repeat scroll 0 0 #EEEEEE;
+	}
+	.content-instructions {
+	    font-size: 12px;
+	    position: absolute;
+	    right: 30px;
+	    top: 86px;
+	    width: 270px;
+	}
+	.content-instructions p {
+	    margin-bottom: 15px;
+	}
+	.content-instructions h4 {
+	    margin-bottom: 15px;
+	}
+
+	#household-profile {padding: 10px 50px;}
+	#household-profile h2 {margin: 20px 0px; font-size: 26px; font-weight: normal;}
+	#household-profile .content-tabs .active {background-color: #E5EFFE;}
+	.instructions {margin: 10px 0px;}
+
+	#profile-actions .search {text-align: right}
+	#profile-actions #profile-search {padding: 5px 10px; font-size: 16px; width: 250px; border-radius: 3px; border: 1px solid #ddd;}
+	
+	#profile-actions {margin: 20px 0px; width: auto;}
+	#profile-actions h4 {color: #333; font-size: 11px; padding: 20px 10px 5px 0px; text-transform: uppercase; border-bottom: 1px solid #000; margin-bottom: 5px; padding-left: 10px;}
+	#profile-actions h4:first-child {padding-top: 10px;}
+
+	#profile-actions .card-category {display: inline-block; border-bottom: 1px solid #eee; padding: 15px 10px; width: 360px; margin-right: 24px; margin-bottom: 0px; position: relative; z-index: 2;}
+
+	#profile-actions .card-category.placeholder { border-bottom: none; }
+	#profile-actions .card-category>a {display: inline-block; font-size: 16px; font-weight: 100; text-decoration: none; color: #007DDE;}
+	#profile-actions .card-category>a:hover {text-decoration: none; color: #000;}
+	#profile-actions .preview {display: block; font-size: 12px; color: #999; margin-left: 0px; margin-top: 5px;}
+
+	#profile-actions .card-category.selected {box-shadow: 0px -7px 7px -7px #777;}
+	#profile-actions .card-category.selected a {color: #000; font-weight: bold;}
+	#profile-actions .card-category.selected .preview {font-weight: normal;}
+
+	#profile-cards {display: none; position: absolute; right: 0px; top: 90px; width: 600px; background: #fff;
+		
+	}
+
+	.cards {  padding: 20px 15px; position: relative; z-index: 1; }
+	.cards-tab-selected {position: absolute; left: 5px; top: -71px; height: 70px; width: 360px; z-index: 1;}
+
+	.card {float: left; width: 360px; box-shadow: 1px 1px 5px #999; border: 1px solid #999; position: relative; margin-right: 32px;}
+	.card-toolbar {background: #fff; height: 30px; line-height: 30px; position: relative; padding: 0px 10px;}
+	.card-title {font-weight: bold;}
+	.card-toolbar .card-actions {position: absolute; right: 0px; top:-2px; height: 24px; line-height: 24px;}
+	.card-toolbar .card-actions a {display: inline-block; padding: 0px 10px; font-size: 12px !important; line-height: 24px !important; height: 24px; margin-left: -4px; text-align: center; text-decoration: none}
+	.card-toolbar .card-actions .edit {background: #007DDE; color: #fff !important; width: 40px;}
+	.card-toolbar .card-actions .save {background: #007DDE; color: #fff !important; width: 40px; display: none;}
+	.card-toolbar .card-actions .remove {color: red !important;}
+	.card-toolbar .card-actions .remove:hover {background: #FFCCCC;}
+	.card-content { font-size: 13px; background: #fff; padding: 10px; overflow: hidden;}
+	.card-content p {margin-bottom: 5px; padding: 0px;}
+	.card-content .label, .card-content label {color: #999; font-size: 11px;}
+
+	.edit-content { display: none; }
+
+	.card-content input { border: 1px solid #999; padding: 2px 3px; width: 163px; }
+	.card-content .input { margin-left: 10px; }
+</style>
+	<div id="overlay"></div>
+</body>
+</html>
