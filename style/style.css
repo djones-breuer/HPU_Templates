@@ -1,0 +1,179 @@
+body {
+  font-family: 'Segoe UI','Helvetica',Arial; }
+
+#household a {
+  color: #000000;
+  outline: 0 none; }
+#household .content-tabs {
+  border-bottom: 1px solid #DDDDDD;
+  margin: 10px 0; }
+  #household .content-tabs a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none; }
+  #household .content-tabs .active {
+    background: none repeat scroll 0 0 #E5EFFE; }
+#household .content-instructions {
+  font-size: 12px;
+  position: absolute;
+  right: 30px;
+  top: 86px;
+  width: 270px; }
+  #household .content-instructions h4 {
+    margin-bottom: 15px; }
+  #household .content-instructions p {
+    margin-bottom: 15px; }
+#household #household-profile {
+  padding: 10px 50px;
+  max-width: 1000px; }
+  #household #household-profile h2 {
+    margin: 20px 0px;
+    font-size: 26px;
+    font-weight: normal; }
+  #household #household-profile .instructions {
+    margin: 10px 0px; }
+#household #profile-actions {
+  margin: 20px 0px;
+  width: auto; }
+  #household #profile-actions h4 {
+    color: #333;
+    font-size: 11px;
+    padding: 20px 10px 5px 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    padding-left: 10px; }
+  #household #profile-actions h4:first-child {
+    padding-top: 10px; }
+  #household #profile-actions .search {
+    text-align: right; }
+  #household #profile-actions #profile-search {
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 3px;
+    border: 1px solid #ddd; }
+  #household #profile-actions .card-category {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    border-bottom: 1px solid #eee;
+    padding: 15px 10px;
+    min-width: 360px;
+    margin-right: 24px;
+    margin-bottom: 0px; }
+  #household #profile-actions .card-category.placeholder {
+    border-bottom: none; }
+  #household #profile-actions .card-category > a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #007DDE; }
+  #household #profile-actions .card-category > a:hover {
+    text-decoration: none;
+    color: #000; }
+  #household #profile-actions .preview {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-left: 0px;
+    margin-top: 5px; }
+  #household #profile-actions .card-category.selected {
+    box-shadow: 0px -7px 7px -7px #777777; }
+    #household #profile-actions .card-category.selected a {
+      font-weight: bold; }
+    #household #profile-actions .card-category.selected .preview {
+      font-weight: normal; }
+#household .cards {
+  position: relative;
+  z-index: 1;
+  padding: 20px 15px; }
+#household .cards-tab-selected {
+  position: absolute;
+  left: 5px;
+  top: -71px;
+  height: 70px;
+  width: 360px;
+  z-index: 1; }
+#household .card {
+  float: left;
+  position: relative;
+  margin-right: 32px;
+  width: 360px;
+  box-shadow: 1px 1px 5px #999;
+  border: 1px solid #999; }
+  #household .card .card-title {
+    font-weight: bold; }
+    #household .card .card-title em {
+      font-weight: normal;
+      font-size: 12px;
+      color: #999; }
+  #household .card .card-toolbar {
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    padding: 0px 10px; }
+    #household .card .card-toolbar .card-actions {
+      position: absolute;
+      right: 0px;
+      top: -2px;
+      height: 24px;
+      line-height: 24px; }
+      #household .card .card-toolbar .card-actions a {
+        display: inline-block;
+        padding: 0px 10px;
+        font-size: 12px !important;
+        line-height: 24px !important;
+        height: 24px;
+        margin-left: -4px;
+        text-align: center;
+        text-decoration: none; }
+      #household .card .card-toolbar .card-actions .edit {
+        background: #007DDE;
+        color: #fff !important;
+        width: 40px; }
+      #household .card .card-toolbar .card-actions .save {
+        background: #007DDE;
+        color: #fff !important;
+        width: 40px;
+        display: none; }
+      #household .card .card-toolbar .card-actions .remove {
+        color: red !important; }
+      #household .card .card-toolbar .card-actions .remove:hover {
+        background: #FFCCCC; }
+  #household .card .card-content {
+    font-size: 13px;
+    background: #fff;
+    padding: 10px;
+    overflow: hidden; }
+    #household .card .card-content p {
+      margin-bottom: 5px;
+      padding: 0px; }
+      #household .card .card-content p i.icon-check, #household .card .card-content p i.icon-check-empty {
+        margin-right: 10px;
+        padding-left: 5px; }
+    #household .card .card-content td {
+      padding: 4px 0;
+      vertical-align: top; }
+    #household .card .card-content .mini-section {
+      padding-top: 8px;
+      margin-top: 8px;
+      border-top: 1px solid #ccc; }
+    #household .card .card-content .label, #household .card .card-content label {
+      color: #999;
+      font-size: 11px;
+      padding-right: 15px; }
+    #household .card .card-content .cbox-label {
+      color: #000;
+      font-size: 12px;
+      padding-left: 12px; }
+    #household .card .card-content input[type="text"], #household .card .card-content textarea {
+      border: 1px solid #999;
+      padding: 2px 3px; }
+    #household .card .card-content .input, #household .card .card-content input[type="checkbox"] {
+      text-align: left; }
+  #household .card .edit-content {
+    display: none; }

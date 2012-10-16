@@ -1,0 +1,133 @@
+<div class='card'>
+	<div class='card-toolbar'>
+		<span class='card-title'>
+			Dr. Root
+		</span>
+		<span class='card-actions'>
+			<a href="#" class='edit edit-toggle'>edit</a>
+			<a href="#" class='save edit-toggle'>save</a>
+			<a href="#" class='remove'>&times; remove</a>
+		</span>
+	</div>
+
+	<div class='card-content read-content edit-toggle'>
+		<table>
+			<tr>
+				<td class="label">Name: </td>
+				<td> Dr. Rita Root </td>
+			</tr>
+			<tr>
+				<td class="label">Type: </td>
+				<td> Current Dentist </td>
+			</tr>
+			<tr>
+				<td class="label">Office Phone: </td>
+				<td>(468) 545-8789</td>
+			</tr>
+			<tr>
+				<td class="label">Address: </td>
+				<td>123 Fester Dr<br/>Suite 231<br/> North Boston MA, 01546</td>
+			</tr>
+		</table>
+
+		<p class="label mini-section">Primary Dentist For: </p>
+		<p><i class="icon-check"></i> Johnny</p>
+		<p><i class="icon-check"></i> Timmy</p>
+		<p><i class="icon-check"></i>Jennifer</p>
+	</div>
+
+	<div class='card-content edit-content edit-toggle'>
+		<form id="dentist-54546">
+			<input type="hidden" name="organization_pk" value="54546"></input>
+			<table>
+				<tr>
+					<td class="label">Name: </td>
+					<td> 
+						Dr. Rita Root 
+					</td>
+				</tr>
+				<tr>
+					<td class="label">Current/Former? </td>
+					<td> 
+						<select name="current_former">
+							<option value="1">Current</option>
+							<option value="0">Former</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">Office Phone: </td>
+					<td>
+						<input name="phone" type="text" value="(468) 545-8789"></input> 
+					</td>
+				</tr>
+
+		
+				<tr>
+					<td class="label">Address 1: </td>
+					<td>
+						<input name="address_1" type="text" value="123 Fester Dr"></input> 
+					</td>
+				</tr>
+				<tr>
+					<td class="label">Address 2: </td>
+					<td>
+						<input name="address_2" type="text" value="Suite 231"></input> 	
+					</td>
+				</tr>
+				<tr>
+					<td class="label">Address 3: </td>
+					<td>
+						<input name="address_3" type="text" value=""></input>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">City</td>
+					<td>
+						<input name="city" type="text" value="North Boston"></input>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">State</td>
+					<td>
+						<input name="state" type="text" value="MA"></input>
+					</td>
+				</tr>
+				<tr>
+					<td class="label">Zip</td>
+					<td>
+						<input name="postal_code" type="text" value="01546"></input>
+					</td>
+				</tr>
+			</table>
+
+			<p class="label mini-section">Primary dentist For: </p>
+			<table>
+				<tr>
+					<td>
+						<input type="checkbox" id="dentist-123123123" checked=checked value="123123123"></input> 
+					</td>
+					<td>
+						<label for="dentist-123123123" class="cbox-label">Johnny</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="dentist-123123124" checked=checked value="123123124"></input> 
+					</td>
+					<td>
+						<label for="dentist-123123124" class="cbox-label">Timmy</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="dentist-123123125" checked=checked value="123123125"></input> 
+					</td>
+					<td>
+						<label for="dentist-123123125" class="cbox-label">Jennifer</label>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>

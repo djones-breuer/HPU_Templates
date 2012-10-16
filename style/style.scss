@@ -1,0 +1,249 @@
+body {font-family: 'Segoe UI','Helvetica',Arial;}
+
+#household {
+
+	a { color: #000000; outline: 0 none; }
+
+	.content-tabs { 
+		border-bottom: 1px solid #DDDDDD; 
+		margin: 10px 0;
+
+		a {
+		    display: inline-block;
+		    font-size: 14px;
+		    padding: 10px 20px;
+		    text-decoration: none;
+		}
+
+		.active {
+	  	  background: none repeat scroll 0 0 #E5EFFE;
+
+		}
+	}
+
+	.content-instructions {
+	    font-size: 12px;
+	    position: absolute;
+	    right: 30px;
+	    top: 86px;
+	    width: 270px;
+
+	    h4 {
+		    margin-bottom: 15px;
+		}
+
+	    p {
+	   		margin-bottom: 15px;
+		}
+	}
+
+	#household-profile {
+		padding: 10px 50px;
+		max-width: 1000px;
+		
+		h2 {margin: 20px 0px; font-size: 26px; font-weight: normal;}
+		.instructions {margin: 10px 0px;}
+	}
+
+	#profile-actions {
+		margin: 20px 0px; width: auto;
+
+		h4 {
+			color: #333; 
+			font-size: 11px; 
+			padding: 20px 10px 5px 0px; 
+			text-transform: uppercase; 
+			border-bottom: 1px solid #000; 
+			margin-bottom: 5px; 
+			padding-left: 10px;
+		}
+		
+		h4:first-child {
+			padding-top: 10px;
+		}
+
+		.search {
+			text-align: right
+		}
+		
+		#profile-search {
+			padding: 5px 10px; 
+			font-size: 16px; 
+			width: 250px; 
+			border-radius: 3px; 
+			border: 1px solid #ddd;
+		}
+
+		.card-category {
+			position: relative; 
+			z-index: 2;
+			display: inline-block; 
+			border-bottom: 1px solid #eee; 
+			padding: 15px 10px; 
+			min-width: 360px; 
+			margin-right: 24px; 
+			margin-bottom: 0px; 
+		}
+		
+		.card-category.placeholder { 
+			border-bottom: none; 
+		}
+
+		.card-category>a {
+			display: inline-block; 
+			font-size: 16px; 
+			font-weight: 100; 
+			text-decoration: none; 
+			color: #007DDE;
+		}
+
+		.card-category>a:hover {
+			text-decoration: none; color: #000;
+		}
+
+		.preview {
+			display: block; 
+			font-size: 12px; 
+			color: #999; 
+			margin-left: 0px; 
+			margin-top: 5px;
+		}
+
+		.card-category.selected {
+			box-shadow: 0px -7px 7px -7px #777;
+			
+			a {
+				font-weight: bold;
+			}
+			
+			.preview {
+				font-weight: normal;
+			}
+		}
+
+	}
+
+	.cards {  
+		position: relative; 
+		z-index: 1; 
+		padding: 20px 15px; 
+	}
+
+	.cards-tab-selected {position: absolute; left: 5px; top: -71px; height: 70px; width: 360px; z-index: 1;}
+
+	.card {
+		float: left; 
+		position: relative; 
+		margin-right: 32px;
+		width: 360px; 
+		box-shadow: 1px 1px 5px #999; 
+		border: 1px solid #999; 
+
+		.card-title {
+			font-weight: bold;
+
+			em { 
+				font-weight:normal;
+				font-size: 12px; 
+				color: #999;
+			}
+		}
+		.card-toolbar {
+			background: #fff; 
+			height: 30px; 
+			line-height: 30px; 
+			position: relative; 
+			padding: 0px 10px;
+
+			.card-actions {
+				position: absolute; right: 
+				0px; top:-2px; height: 24px; 
+				line-height: 24px;
+				a {
+					display: inline-block; 
+					padding: 0px 10px; 
+					font-size: 12px !important; 
+					line-height: 24px !important; 
+					height: 24px; 
+					margin-left: -4px; 
+					text-align: center; 
+					text-decoration: none
+				}
+				.edit {
+					background: #007DDE; 
+					color: #fff !important; 
+					width: 40px;
+				}
+
+				.save {
+					background: #007DDE; 
+					color: #fff !important; 
+					width: 40px; 
+					display: none;
+				}
+				.remove {
+					color: red !important;
+				}
+				.remove:hover {
+					background: #FFCCCC;
+				}
+			}
+
+		}
+
+		.card-content { 
+			font-size: 13px; 
+			background: #fff; 
+			padding: 10px; 
+			overflow: hidden;
+
+			p {
+				margin-bottom: 5px; 
+				padding: 0px;
+				i.icon-check, i.icon-check-empty { margin-right: 10px; padding-left: 5px; }
+			}
+
+			td { 
+				padding: 4px 0; 
+				vertical-align: top; 
+
+			}
+
+			.mini-section { padding-top: 8px; margin-top: 8px; border-top: 1px solid #ccc;}
+			
+			.label, label {
+				color: #999; 
+				font-size: 11px;
+				padding-right: 15px; 
+			}
+
+			.cbox-label {
+				color: #000; 
+				font-size: 12px;
+				padding-left: 12px; 
+			}
+
+			input[type="text"], textarea { 
+				border: 1px solid #999; 
+				padding: 2px 3px; 
+				
+			}
+
+			.input, input[type="checkbox"] { 
+				text-align: left;
+			}
+		}
+
+		.edit-content { display: none; }
+
+
+	}
+
+}	
+
+
+
+	
+
+	
+	
