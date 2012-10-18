@@ -149,12 +149,12 @@ body {
     background: #fff;
     padding: 10px;
     overflow: hidden; }
+    #household .card .card-content i.icon-check, #household .card .card-content i.icon-check-empty {
+      margin-right: 10px;
+      padding-left: 5px; }
     #household .card .card-content p {
       margin-bottom: 5px;
       padding: 0px; }
-      #household .card .card-content p i.icon-check, #household .card .card-content p i.icon-check-empty {
-        margin-right: 10px;
-        padding-left: 5px; }
     #household .card .card-content td {
       padding: 4px 0;
       vertical-align: top; }
@@ -168,8 +168,9 @@ body {
       padding-right: 15px; }
     #household .card .card-content .cbox-label {
       color: #000;
-      font-size: 12px;
-      padding-left: 12px; }
+      font-size: 13px; }
+    #household .card .card-content .not-checked {
+      color: #999; }
     #household .card .card-content input[type="text"], #household .card .card-content textarea {
       border: 1px solid #999;
       padding: 2px 3px; }
@@ -177,3 +178,7 @@ body {
       text-align: left; }
   #household .card .edit-content {
     display: none; }
+  #household .card .help {
+    font-size: 10px;
+    font-style: italic;
+    color: #999; }

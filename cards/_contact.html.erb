@@ -11,13 +11,13 @@
 	</div>
 
 	<div class='card-content read-content edit-toggle'>
-			<p><label>Full Name</label> [Prefix] First [(Preferred)] Last [Suffix]</p>
-			<p><label>Relationship: </label> Uncle</p>
-			<p><label>Home Phone: </label> (234) 123-3490</p>
-			<p><label>Work Phone: </label> (234) 123-3545</p>
-			<p><label>Mobile Phone: </label> (567) 234-2393</p>
-			<p><label>Is emergency contact?</label> Yes </p>
-		
+		<table>
+			<%= render '/shared/contact_base_read_only' %>
+			<tr><td class="label">Home Phone:</td><td>(234) 123-3490</td></tr>
+			<tr><td class="label">Work Phone:</td><td>(234) 123-3545</td></tr>
+			<tr><td class="label">Mobile Phone:</td><td>(567) 234-2393</td></tr>
+			<tr><td class="label">Is emergency contact?</td><td>Yes</td></tr>
+		</table>
 	</div>
 
 	<div class='card-content edit-content edit-toggle'>
@@ -26,7 +26,7 @@
 			<table>
 				<tr>
 					<td class="label">Full Name: </td> 
-					<td>[Prefix] First [(Preferred)] Last [Suffix]</td>
+					<td>Rodger McAlester-Donivant III</td>
 				</tr>
 				<tr>
 					<tr>
@@ -41,7 +41,7 @@
 				</tr>
 				<tr>
 					<td class="label">Home Phone: </td> 
-					<td><input class="input" type="text" name="phone_home" valye="(234) 123-3490"></input></td>
+					<td><input class="input" type="text" name="phone_home" value="(234) 123-3490"></input></td>
 				</tr>
 				<tr>
 					<td class="label">Work Phone: </td>

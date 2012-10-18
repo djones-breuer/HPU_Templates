@@ -31,9 +31,9 @@
 		</table>
 
 		<p class="label mini-section">Primary Dentist For: </p>
-		<p><i class="icon-check"></i> Johnny</p>
-		<p><i class="icon-check"></i> Timmy</p>
-		<p><i class="icon-check"></i>Jennifer</p>
+		<table>
+			<%= render '/shared/child_ckboxes_read' %>
+		</table>
 	</div>
 
 	<div class='card-content edit-content edit-toggle'>
@@ -103,30 +103,7 @@
 
 			<p class="label mini-section">Primary dentist For: </p>
 			<table>
-				<tr>
-					<td>
-						<input type="checkbox" id="dentist-123123123" checked=checked value="123123123"></input> 
-					</td>
-					<td>
-						<label for="dentist-123123123" class="cbox-label">Johnny</label>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" id="dentist-123123124" checked=checked value="123123124"></input> 
-					</td>
-					<td>
-						<label for="dentist-123123124" class="cbox-label">Timmy</label>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" id="dentist-123123125" checked=checked value="123123125"></input> 
-					</td>
-					<td>
-						<label for="dentist-123123125" class="cbox-label">Jennifer</label>
-					</td>
-				</tr>
+				<%= render '/shared/child_ckboxes_write' %>
 			</table>
 		</form>
 	</div>
