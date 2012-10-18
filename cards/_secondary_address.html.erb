@@ -1,7 +1,7 @@
 <div class='card'>
 	<div class='card-toolbar'>
 		<span class='card-title'>
-			1234 Main Street
+			101 Hollywood Blvd
 		</span>
 		<span class='card-actions'>
 			<a href="#" class='edit edit-toggle'>edit</a>
@@ -15,12 +15,14 @@
 
 			<dt>Address</dt>
 			<dd>
-				1234 Main Street<br/>
-				Charelston, SC 38290
+				101 Hollywood Blvd<br/>
+				Unit 12<br/>
+				Hollywood, CA 90069
+				United States
 			</dd>
 					
 			<dt>Phone</dt>
-			<dd>(893) 234-2343</dd>
+			<dd>(546) 456-8464</dd>
 
 		</dl>
 	</div>
@@ -29,24 +31,15 @@
 		<form class="pickup-545435">
 			<input type="hidden" name="household_pk" value="2342"></input> <!-- Do not update the person -->
 			<dl>
-				
-				<dt>Address Change</dt>
-				<dd>
-					<select name="address_change">
-						<option value="0">I am moving</option>
-						<option value="1">I have moved</option>
-					</select>
-				</dd>
-			
-			
+
 				<dt>Address 1</dt>
 				<dd>
-					<input type="text" name="address_1_a" value="1234 Main Street"></input>
+					<input type="text" name="address_1_a" value="101 Hollywood Blvd"></input>
 				</dd>
 							
 				<dt>Address 2</dt>
 				<dd>
-					<input type="text" name="address_2_a" value=""></input>
+					<input type="text" name="address_2_a" value="Unit 12"></input>
 				</dd>
 							
 				<dt>Address 3</dt>
@@ -56,22 +49,30 @@
 							
 				<dt>City</dt>
 				<dd>
-					<input type="text" name="city_a" value="Charelston"></input>
+					<input type="text" name="city_a" value="Hollywood"></input>
 				</dd>
 							
-				<dt>State</dt>
+				<dt>State/Province</dt>
 				<dd>
-					<input type="text" name="state_province_a" value="SC"></input>
+					<input type="text" name="state_province_a" value="CA"></input>
 				</dd>
 							
-				<dt>Zip</dt>
+				<dt>Postal Code</dt>
 				<dd>
-					<input type="text" name="postal_code_a" value="38290"></input>
+					<input type="text" name="postal_code_a" value="90069"></input>
+				</dd>
+
+				<dt>Country</dt>
+				<dd>
+					<select name="country_a">
+						<option value="1">United States</option>
+						<option value="2">Some Other Country</option>
+					</select>
 				</dd>
 							
 				<dt>Phone</dt>
 				<dd>
-					<input type="text" name="phone" value="(893) 234-2343"></input>
+					<input type="text" name="phone" value="(546) 456-8464"></input>
 				</dd>
 				
 			</dl>

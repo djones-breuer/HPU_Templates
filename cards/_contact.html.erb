@@ -11,49 +11,58 @@
 	</div>
 
 	<div class='card-content read-content edit-toggle'>
-		<table>
-			<%= render '/shared/contact_base_read_only' %>
-			<tr><td class="label">Home Phone:</td><td>(234) 123-3490</td></tr>
-			<tr><td class="label">Work Phone:</td><td>(234) 123-3545</td></tr>
-			<tr><td class="label">Mobile Phone:</td><td>(567) 234-2393</td></tr>
-			<tr><td class="label">Is emergency contact?</td><td>Yes</td></tr>
-		</table>
+		<dl>
+			<dt>Full Name:</dt>
+			<dd>Rodger McAlester-Donivant III</dd>
+
+			<dt>Home Phone:</dt>
+			<dd>(234) 123-3545</dd>
+	
+			<dt>Work Phone:</dt>
+			<dd>(234) 123-3490</dd>
+	
+			<dt>Mobile Phone:</dt>
+			<dd>(567) 234-2393</dd>
+		
+			<dt>Emergency contact?</dt>
+			<dd>Yes</dd>
+		</dl>
+	
 	</div>
 
 	<div class='card-content edit-content edit-toggle'>
 		<form id="contact-54546">
 			<input type="hidden" name="person_pk" value="54546"></input>
-			<table>
-				<tr>
-					<td class="label">Full Name: </td> 
-					<td>Rodger McAlester-Donivant III</td>
-				</tr>
-				<tr>
-					<tr>
-					<td class="label">Relationship: </td> 
-					<td>
+		
+			
+				<dl>
+					<dt>Full Name:</dt>
+					<dd>Rodger McAlester-Donivant III</dd>
+				
+				
+					<dt>Relationship: </dt>
+					<dd>
 						<select class="input" name="relationship">
 							<option value="14" selected="selected">Uncle</option>
 							<option value="15">Aunt</option>
 							<option value="16">Magician</option>
 						</select>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Home Phone: </td> 
-					<td><input class="input" type="text" name="phone_home" value="(234) 123-3490"></input></td>
-				</tr>
-				<tr>
-					<td class="label">Work Phone: </td>
-					<td><input class="input" type="text" name="phone_business" value="(234) 123-3545"></input></td>
-				</tr>
-				<tr>
-					<td class="label">Mobile Phone: </td> 
-					<td><input class="input" type="text" name="phone_mobile" value="(567) 234-2393"></input></td>
-				</tr>
-				<tr>
-					<td class="label">Is emergency contact?</label></td>
-					<td>
+					</dd>
+				
+				
+					<dt>Home Phone: </dt>
+					<dd><input class="input" type="text" name="phone_home" value="(234) 123-3490"></input></dd>
+				
+				
+					<dt>Work Phone: </dt>
+					<dd><input class="input" type="text" name="phone_business" value="(234) 123-3545"></input></dd>
+				
+				
+					<dt>Mobile Phone: </dt>
+					<dd><input class="input" type="text" name="phone_mobile" value="(567) 234-2393"></input></dd>
+				
+					<dt>Emergency contact?</dt>
+					<dd>
 						<select class="input" name="is_emergency_contact">
 							<option value="1" selected="selected">
 								Yes 
@@ -62,9 +71,10 @@
 								No
 							</option>
 						</select>
-					</td>
-				</tr>
-			</table>
+					</dd>
+
+				</dl>
+			
 		</form>
 	</div>
 </div>

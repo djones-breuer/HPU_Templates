@@ -11,21 +11,33 @@
 	</div>
 
 	<div class='card-content read-content edit-toggle'>
-		<table>
+		
+		<dl>
 			<%= render '/shared/contact_base_read_only' %>
-			<tr><td class="label" colspan="2">Receives General Communication For:</td></tr>
+		</dl>
+
+		<p class="label">Receives General Communication For:</p>
+
+		<dl>	
 			<%= render '/shared/child_ckboxes_read' %>
-		</table>
+		</dl>
+
 	</div>
 
 	<div class='card-content edit-content edit-toggle'>
 		<form class="pickup-545435">
 			<input type="hidden" name="person_pk" value="0"></input> <!-- Do not update the person -->
-			<table>
+		
+			<dl>
 				<%= render '/shared/contact_base_read_only' %>
-				<tr><td class="label" colspan="2">Receives General Communication For:</td></tr>
+			</dl>
+
+			<p class="label">Receives General Communication For:</p>
+
+			<dl>	
 				<%= render '/shared/child_ckboxes_write' %>
-			</table>
+			</dl>
+			
 		</form>
 	</div>
 </div>

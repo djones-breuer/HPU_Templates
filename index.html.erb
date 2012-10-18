@@ -38,7 +38,7 @@
 				<a href="#">Recent Updates</a>
 			</div>
 
-			<div id="profile-actions" class="centered-box">
+			<div id="profile-actions" class="centered-box clear">
 
 				<div class="search">
 					<input type="text" id="profile-search" placeholder="search actions" />
@@ -186,6 +186,18 @@
 
 				<div class='card-category'>
 					<a href="#">
+						My Household Has Changed
+						<span class="preview">Names, Phones, &amp; Emails</span>
+					</a>
+
+					<div id='household-adult-details' class="cards clear">
+						<div class='cards-tab-selected'>&nbsp;</div>
+						<%= render 'cards/family_change' %>
+					</div>
+				</div>
+
+				<div class='card-category'>
+					<a href="#">
 						My Children Information
 						<span class="preview">Names, Phones, &amp; Emails</span>
 					</a>
@@ -217,7 +229,7 @@
 
 					<div id='secondary-address-details' class="cards clear">
 						<div class='cards-tab-selected'>&nbsp;</div>
-
+						<%= render 'cards/secondary_address' %>
 					</div>
 				</div>
 
@@ -229,7 +241,7 @@
 
 					<div id='directory-preferences-details' class="cards clear">
 						<div class='cards-tab-selected'>&nbsp;</div>
-
+						<%= render 'cards/directory_preferences' %>
 					</div>
 				</div>
 
@@ -241,34 +253,33 @@
 
 					<div id='communication-method-details' class="cards clear">
 						<div class='cards-tab-selected'>&nbsp;</div>
-
+						<%= render 'cards/communication_preferences' %>
 					</div>	
 				</div>
 
 				<div class='card-category'>
 					<a href="#">
 						Update My Employer
-						<span class="preview">Sales Manager at Breuer &amp; Co.</span>
+						<span class="preview">CEO at Breuer &amp; Co.</span>
 					</a>
 
 					<div id='employer-notification-details' class="cards clear">
 						<div class='cards-tab-selected'>&nbsp;</div>
-
+						<%= render 'cards/employer' %>
 					</div>
 				</div>
 
 				<div class='card-category'>
 					<a href="#">
-						Review International Information &amp; Travel
-						<span class="preview">Citizenship &amp; Passports</span>
+						Higher Education
+						<span class="preview"></span>
 					</a>
 
-					<div id='citizenship-details' class="cards clear">
+					<div id='employer-notification-details' class="cards clear">
 						<div class='cards-tab-selected'>&nbsp;</div>
-
+						<%= render 'cards/education' %>
 					</div>
 				</div>
-
 
 				<div class='card-category'>
 					<a href="#">
@@ -279,8 +290,24 @@
 					<div id='vehicle-details' class="cards clear">
 						<div class='cards-tab-selected'>&nbsp;</div>
 
+						<%= render 'cards/vehicle' %>
 					</div>
 				</div>
+
+				<div class='card-category'>
+					<a href="#">
+						Citizenships &amp; Passports
+						<span class="preview"></span>
+					</a>
+
+					<div id='citizenship-details' class="cards clear">
+						<div class='cards-tab-selected'>&nbsp;</div>
+
+						<%= render 'cards/citizenship' %>
+					</div>
+				</div>
+
+
 
 <!-- CATEGORY: GRANDPARENT INFORMATION  -->
 				

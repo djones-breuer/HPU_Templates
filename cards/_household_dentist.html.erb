@@ -11,100 +11,87 @@
 	</div>
 
 	<div class='card-content read-content edit-toggle'>
-		<table>
-			<tr>
-				<td class="label">Name: </td>
-				<td> Dr. Rita Root </td>
-			</tr>
-			<tr>
-				<td class="label">Type: </td>
-				<td> Current Dentist </td>
-			</tr>
-			<tr>
-				<td class="label">Office Phone: </td>
-				<td>(468) 545-8789</td>
-			</tr>
-			<tr>
-				<td class="label">Address: </td>
-				<td>123 Fester Dr<br/>Suite 231<br/> North Boston MA, 01546</td>
-			</tr>
-		</table>
+		<dl>
+		
+			<dt>Name: </dt>
+			<dd> Dr. Rita Root </dd>
+		
+			<dt>Type: </dt>
+			<dd> Current Dentist </dd>
+		
+			<dt>Office Phone: </dt>
+			<dd>(468) 545-8789</dd>
+		
+			<dt>Address: </dt>
+			<dd>123 Fester Dr<br/>Suite 231<br/> North Boston MA, 01546</dd>
+			
+		</dl>
 
 		<p class="label mini-section">Primary Dentist For: </p>
-		<table>
+		<dl>
 			<%= render '/shared/child_ckboxes_read' %>
-		</table>
+		</dl>
 	</div>
 
 	<div class='card-content edit-content edit-toggle'>
 		<form id="dentist-54546">
 			<input type="hidden" name="organization_pk" value="54546"></input>
-			<table>
-				<tr>
-					<td class="label">Name: </td>
-					<td> 
-						Dr. Rita Root 
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Current/Former? </td>
-					<td> 
-						<select name="current_former">
-							<option value="1">Current</option>
-							<option value="0">Former</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Office Phone: </td>
-					<td>
-						<input name="phone" type="text" value="(468) 545-8789"></input> 
-					</td>
-				</tr>
-
-		
-				<tr>
-					<td class="label">Address 1: </td>
-					<td>
-						<input name="address_1" type="text" value="123 Fester Dr"></input> 
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Address 2: </td>
-					<td>
-						<input name="address_2" type="text" value="Suite 231"></input> 	
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Address 3: </td>
-					<td>
-						<input name="address_3" type="text" value=""></input>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">City</td>
-					<td>
-						<input name="city" type="text" value="North Boston"></input>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">State</td>
-					<td>
-						<input name="state" type="text" value="MA"></input>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Zip</td>
-					<td>
-						<input name="postal_code" type="text" value="01546"></input>
-					</td>
-				</tr>
-			</table>
+			<dl>
+				
+				<dt>Name: </dt>
+				<dd> 
+					Dr. Rita Root 
+				</dd>
+			
+				<dt>Current/Former? </dt>
+				<dd> 
+					<select name="current_former">
+						<option value="1">Current</option>
+						<option value="0">Former</option>
+					</select>
+				</dd>
+			
+				<dt>Office Phone: </dt>
+				<dd>
+					<input name="phone" type="text" value="(468) 545-8789"></input> 
+				</dd>
+			
+				<dt>Address 1: </dt>
+				<dd>
+					<input name="address_1" type="text" value="123 Fester Dr"></input> 
+				</dd>
+			
+				<dt>Address 2: </dt>
+				<dd>
+					<input name="address_2" type="text" value="Suite 231"></input> 	
+				</dd>
+			
+				<dt>Address 3: </dt>
+				<dd>
+					<input name="address_3" type="text" value=""></input>
+				</dd>
+			
+				<dt>City</dt>
+				<dd>
+					<input name="city" type="text" value="North Boston"></input>
+				</dd>
+			
+				<dt>State</dt>
+				<dd>
+					<input name="state" type="text" value="MA"></input>
+				</dd>
+			
+				<dt>Zip</dt>
+				<dd>
+					<input name="postal_code" type="text" value="01546"></input>
+				</dd>
+				
+			</dl>
 
 			<p class="label mini-section">Primary dentist For: </p>
-			<table>
+			<dl>
 				<%= render '/shared/child_ckboxes_write' %>
-			</table>
+			</dl>
 		</form>
 	</div>
 </div>

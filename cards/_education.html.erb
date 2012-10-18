@@ -1,0 +1,79 @@
+<div class='card'>
+	<div class='card-toolbar'>
+		<span class='card-title'>
+			Wheaton College
+		</span>
+		<span class='card-actions'>
+			<a href="#" class='edit edit-toggle'>edit</a>
+			<a href="#" class='save edit-toggle'>save</a>
+			<a href="#" class='remove'>&times; remove</a>
+		</span>
+	</div>
+
+	<div class='card-content read-content edit-toggle'>
+		<dl>
+			<dt>Alumnus/a</dt>
+			<dd>Elliott Breuer</dd>
+
+			<dt>Degree</dt>
+			<dd>B.S.</dd>
+			
+			<dt>Degree Year</dt>		
+			<dd>1982</dd>
+
+			<dt>Major</dt>
+			<dd>Computer Science</dd>
+
+			<dt>Notes</dt>
+			<dd></dd>
+		</dl>
+	</div>
+
+	<div class='card-content edit-content edit-toggle'>
+		<form class="pickup-545435">
+			<input type="hidden" name="person_education_pk" value="2342"></input> <!-- Do not update the person -->
+		
+			<dl>
+			
+				<dt>Alumnus/a</dt>
+				<dd>Elliott Breuer</dd>
+
+				<dt>Degree</dt>
+				<dd>
+					<select name="degree">
+						<option value="1">B.S.</option>
+						<option value="2">B.A.</option>
+						<option value="3">Ph.D</option>
+					</select>
+				</dd>
+				
+				<dt>Degree Year</dt>		
+				<dd>
+					<select name="degree_year">
+						<option value="1">1998</option>
+						<option value="2">1997</option>
+					</select>
+				</dd>
+
+				<dt>Major</dt>
+				<dd>
+					<select name="major">
+						<option value="1">Computer Science</option>
+						<option value="2">Physics</option>
+						<option value="3">Math</option>
+						<option value="4">Biology</option>
+						<option value="10">Some other lame degree</option>
+					</select>
+				</dd>
+
+				<dt>Notes</dt>
+				<dd>
+					<textarea name="notes"></textarea>
+				</dd>
+				
+			</dl>
+
+		</form>
+	</div>
+
+</div>
