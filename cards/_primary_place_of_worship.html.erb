@@ -1,7 +1,7 @@
 <div class='card'>
 	<div class='card-toolbar'>
 		<span class='card-title'>
-			Rodger McAlester
+			First Baptist Church
 		</span>
 		<span class='card-actions'>
 			<a href="#" class='edit edit-toggle'>edit</a>
@@ -11,33 +11,33 @@
 	</div>
 
 	<div class='card-content read-content edit-toggle'>
-		
 		<dl>
-			<%= render '/shared/contact_base_read_only' %>
+					
+			<dt>Address: </dt>
+			<dd>123 Main Dr<br/> South Boston MA, 01545</dd>
+
 		</dl>
 
-		<p class="label">Receives General Communication For:</p>
-
-		<dl>	
-			<%= render '/shared/child_ckboxes_read' %>
-		</dl>
-
+		
 	</div>
 
 	<div class='card-content edit-content edit-toggle'>
 		<form>
-			<input type="hidden" name="relationship_person_pk" value="6545"></input> 
-		
-			<dl>
-				<%= render '/shared/contact_base_read_only' %>
-			</dl>
-
-			<p class="label">Receives General Communication For:</p>
-
-			<dl>	
-				<%= render '/shared/child_ckboxes_write' %>
-			</dl>
+			<input type="hidden" name="organization_pk" value="54546"></input>
 			
+			<dl>
+			
+				<dt>Place of Worship: </dt>
+				<dd>
+					<select name="place_of_worship_fk">
+						<option value="1">First Baptist Church</option>
+						<option value="2">Second Baptist Church</option>
+						<option value="3">Third Baptist Church</option>
+					</select>
+				</dd>
+				
+			</dl>
+
 		</form>
 	</div>
 </div>

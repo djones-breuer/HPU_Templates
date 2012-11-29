@@ -1,4 +1,5 @@
-body {font-family: 'Segoe UI','Helvetica',Arial;}
+body {font-family: 'Segoe UI','Helvetica',Arial; padding: 0; margin: 0; }
+
 
 #household {
 
@@ -111,15 +112,33 @@ body {font-family: 'Segoe UI','Helvetica',Arial;}
 		}
 
 		.card-category>a {
-			display: inline-block; 
-			font-size: 16px; 
-			font-weight: 100; 
-			text-decoration: none; 
-			color: #007DDE;
+			border-bottom: 1px solid #CCCCCC;
+		    color: #007DDE;
+		    display: inline-block;
+		    font-size: 16px;
+		    font-weight: 100;
+		    margin-bottom: 7px;
+		    padding-bottom: 4px;
+		    text-decoration: none;
+		    width: 360px;
 		}
 
 		.card-category>a:hover {
 			text-decoration: none; color: #000;
+		}
+
+		.card-category a.add {
+			display: block;
+			background: none repeat scroll 0 0 #007DDE;
+		    border: medium none;
+		    color: #FFFFFF;
+		    font-size: 11px;
+		    padding: 6px 0 4px;
+		    text-align: center;
+		    width: 90px;
+		    margin-left: 15px; 
+		    margin-bottom: 2px; 
+		    text-transform: uppercase;
 		}
 
 		.preview {
@@ -147,7 +166,7 @@ body {font-family: 'Segoe UI','Helvetica',Arial;}
 	.cards {  
 		position: relative; 
 		z-index: 1; 
-		padding: 20px 15px; 
+		padding: 10px 15px; 
 	}
 
 	.cards-tab-selected {position: absolute; left: 5px; top: -71px; height: 70px; width: 360px; z-index: 1;}
@@ -230,7 +249,7 @@ body {font-family: 'Segoe UI','Helvetica',Arial;}
 
 			}
 
-			.mini-section { padding-top: 8px; margin-top: 8px; border-top: 1px solid #ccc;}
+			.mini-section { padding-top: 8px; margin-top: 8px; border-top: 1px solid #ccc; font-weight: bold; font-style: italic; color: #555;}
 			
 			.label, label {
 				color: #999; 

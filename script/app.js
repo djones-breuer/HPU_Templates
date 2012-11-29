@@ -1,6 +1,11 @@
 
 $(function() { 
 
+	$("#temp-demo a").click(function(e) {
+		$(".cards, .add").toggle(); 
+		return false; 
+	}); 
+
 	$("#demo-details").click(function(e){
 	
 		$(e.target).closest("div").toggleClass("selected");
@@ -14,7 +19,7 @@ $(function() {
 	$("#profile-search").keyup(function(e) {
 		var text = $(this).val();
 
-		if(text == "") {
+		if(text = "") {
 			$(".card-category").show();
 		} else {
 			$(".card-category").hide();

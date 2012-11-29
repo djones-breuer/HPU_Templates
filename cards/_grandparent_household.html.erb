@@ -1,0 +1,181 @@
+<div class='card'>
+	<div class='card-toolbar'>
+		<span class='card-title'>
+			Tom &amp; Carol
+		</span>
+		<span class='card-actions'>
+			<a href="#" class='edit edit-toggle'>edit</a>
+			<a href="#" class='save edit-toggle'>save</a>
+			<a href="#" class='remove'>&times; remove</a>
+		</span>
+	</div>
+
+	<div class='card-content read-content edit-toggle'>
+		
+		<dl>
+			<dt>Contact</dt>
+			<dd>
+				Tom and Carol Breuer<br/>
+				14 New York Ave<br/>
+				Apt 12b<br/>
+				New York, NY 05456-4546<br/>
+				United States<br/><br/>
+
+				(778) 454-7987 
+			</dd>
+
+
+		</dl>
+
+		<p class="label mini-section">Grandchildren:</p>
+
+		<dl>
+			<%= render '/shared/child_ckboxes_read' %>
+		</dl>
+
+		<p class="mini-section">Tom Breuer</p>
+		
+		<dl>
+			<dt>Full Name</dt>
+			<dd>Mr. Tom Breuer</dd>
+
+			<dt>Mobile Phone</dt>
+			<dd>(878) 654-8764</dd>
+
+			<dt>Email 1</dt>
+			<dd>tbreuer@breuer.com</dd>
+
+			<dt>Emergency Contact?</dt>
+			<dd>Yes</dd>
+		</dl>
+
+		<p class="mini-section">Carol Breuer</p>
+
+		<dl>
+			<dt>Full Name</dt>
+			<dd>Mrs. Carol Breuer</dd>
+
+			<dt>Mobile Phone</dt>
+			<dd>(878) 654-8768</dd>
+
+			<dt>Email 1</dt>
+			<dd>cbreuer@gmail.com</dd>
+
+			<dt>Emergency Contact?</dt>
+			<dd>Yes</dd>
+		</dl>
+
+	</div>
+
+	<div class='card-content edit-content edit-toggle'>
+		<form>
+			<input type="hidden" name="multiple-records" value="1" />
+			<dl>
+				<dt>Address 1</dt>
+				<dd>
+					<input type="text" name="household:23432.address_1_a" value="14 New York Ave"></input>
+				</dd>
+							
+				<dt>Address 2</dt>
+				<dd>
+					<input type="text" name="household:23432.address_2_a" value="14 New York Ave"></input>
+				</dd>
+							
+				<dt>Address 3</dt>
+				<dd>
+					<input type="text" name="household:23432.address_3_a" value=""></input>
+				</dd>
+							
+				<dt>City</dt>
+				<dd>
+					<input type="text" name="household:23432.city_a" value="New York"></input>
+				</dd>
+							
+				<dt>State/Province</dt>
+				<dd>
+					<input type="text" name="household:23432.state_province_a" value="NY"></input>
+				</dd>
+							
+				<dt>Postal Code</dt>
+				<dd>
+					<input type="text" name="household:23432.postal_code_a" value="05456-4546"></input>
+				</dd>
+
+				<dt>Country</dt>
+				<dd>
+					<select name="household:23432.country_a">
+						<option value="1">United States</option>
+						<option value="2">Some Other Country</option>
+					</select>
+				</dd>
+							
+				<dt>Phone</dt>
+				<dd>
+					<input type="text" name="phone" value="(778) 454-7987"></input>
+				</dd>
+
+
+			</dl>
+
+			<p class="label mini-section">Grandchildren:</p>
+
+			<dl>
+				<%= render '/shared/child_ckboxes_write' %>
+			</dl>
+
+			<p class="mini-section">Tom Breuer</p>
+			
+			<dl>
+			
+				<dt>Full Name</dt>
+				<dd>Mr. Tom Breuer</dd>
+
+				<dt>Mobile Phone</dt>
+				<dd><input type="text" name="person:12323.phone_mobile" value="(878) 654-8764"></input></dd>
+
+				<dt>Email 1</dt>
+				<dd><input type="text" name="person:12323.email_1" value="(878) 654-8764">tbreuer@breuer.com</dd>
+
+				<dt>Emergency Contact?</dt>
+				<dd>
+					<select class="input" name="person:12323.emergency">
+						<option value="1" selected="selected">
+							Yes 
+						</option>	
+						<option>
+							No
+						</option>
+					</select>
+				</dd>
+
+			</dl>
+			</dl>
+
+			<p class="mini-section">Carol Breuer</p>
+
+			<dl>
+				<dt>Full Name</dt>
+				<dd>Mr. Carol Breuer</dd>
+
+				<dt>Mobile Phone</dt>
+				<dd><input type="text" name="person:12323.phone_mobile" value="(878) 654-8768"></input></dd>
+
+				<dt>Email 1</dt>
+				<dd><input type="text" name="person:12323.email_1" value="(878) 654-8764">cbreuer@breuer.com</dd>
+
+				<dt>Emergency Contact?</dt>
+				<dd>
+					<select class="input" name="person:12323.emergency">
+						<option value="1" selected="selected">
+							Yes 
+						</option>	
+						<option>
+							No
+						</option>
+					</select>
+				</dd>
+			</dl>
+		</form>
+	</div>
+	
+</div>
